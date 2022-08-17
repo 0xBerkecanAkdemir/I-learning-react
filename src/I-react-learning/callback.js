@@ -99,8 +99,8 @@ const getComments = (number) => {
         if (number === 1){
             resolve ({text :'selam'});
         }
-    reject ('bir problem oluştu');
-    })
+            reject ('bir problem oluştu');
+        })
 }
 getComments(2) /* 2 dersem 1 e eşit olmadığı için catch e düşer 1 dersem eşit olduğu için then e düşer selam der */
 .then((data) => console.log(data))
